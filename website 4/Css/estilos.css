@@ -1,0 +1,64 @@
+*/*aspectos generales*/{
+margin:0px;
+padding:0px;
+font-family:arial, helvetica, verdana;
+
+}
+
+body{
+	background: #e3e4e6;
+}
+.main .article, footer {
+	background: #f7d0cb;
+	width: 95%;
+	margin: 20px 20px;
+	float: left;
+	border-radius: 10px;
+}
+.anni{
+	width: 40%;
+	margin: 20px;
+	border-radius: 10px;
+	float: left;
+}
+.texto{
+	width: 55%;
+	float: left;
+}
+h2, p {
+	margin: 15px;
+	padding: 10px;
+}
+.carta{
+	background: #f6d9d5;
+	width: 20%;
+	height: 630px;
+	margin: 10px 10px;
+	float: left;
+	border-radius: 10px;
+	
+}
+.gato{
+	margin: 10px 10px 0px 10px;
+	width: 80%;
+	border-radius: 10px;
+}
+aside{
+	width: 35%;
+	margin-top: 20px;
+	background: #c79dd7;
+	float: left;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;
+	}
+footer{ 
+	background: #f9fafc;
+	width: 95%;
+	margin: 20px 20px;
+	float: left;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+

@@ -1,0 +1,77 @@
+#dccfcf#dccfcf#dccfcf#dccfcf#dccfcf*/* aspectos generales de la web*/{
+
+ margin:0;
+	padding: 0;
+	font-family: arial, hervetica, verdana; 
+}
+
+
+body {
+	background: #e3e4e6
+}
+header div img{
+	width: 30%;
+}
+aside {
+	width: 30%;
+	margin-top: 20px;
+	background: #f7d0cb;
+	float: left;
+	border-radius: 10px;
+	padding: 20px;
+	box-sizing: border-box;}
+
+aside h3 p{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.main .article{
+	background: #f6d9d5;
+	width: 95% auto;
+	margin-right: 10px 20px;
+	float: left;
+	border-radius: 10px;
+}
+.imagen {
+	padding: 10px;
+	width: 35%;
+	float: left;
+}
+.imagen2{
+	width: 90%;
+	padding: 10px;
+	
+}
+
+.contenido{
+	background:#ff93ac;
+	width: 65%;
+	margin: 20px 20px;
+	float: left;
+	border-radius: 10px;
+	}
+h2,h3, p{
+	padding: 15px;
+}
+.contactenos{
+	width: 10%;
+	padding: 20px 60px;
+	}
+.contactos{ background:#f9fafc;
+	width: 65%;
+	margin: 20px 20px;
+	float: left;
+	border-radius: 10px;
+	}
+footer{
+	width: 95%;
+	background: #313131	;
+	color: #f7d0cb;
+	clear: both;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	}
+

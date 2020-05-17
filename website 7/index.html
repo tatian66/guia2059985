@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title> website with HTML and CSS</title>
+		<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div class="nav">
+					<a class="home" href="#home">Home</a>
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
+				<div class="search-container">
+				<form action="/action_page.php">
+				<input type="text" placeholder="Search..." name="Search">
+				</form>
+			    </div>
+			</nav>
+		</header>
+
+		<!-- Silde -->
+
+		<section class="main">
+			<article class="article">
+				<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 5</div>
+				  <img src="imagenes/captus.jpg" class="img">
+				  <div class="text">captus</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 5</div>
+				  <img src="imagenes/gatos.jpg" class="img">
+				  <div class="text">gatos</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 5</div>
+				  <img src="imagenes/posillos.jpg" class="img">
+				  <div class="text">posillo</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 5</div>
+				  <img src="imagenes/estrella.png" class="img">
+				  <div class="text">collar</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">5 / 5</div>
+				  <img src="imagenes/nubes.jpg" class="img">
+				  <div class="text">nubes</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				  <span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+				      slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				      dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+			</article>
+		</section>
+
+		<!-- Texto -->
+
+		<section class="texto">
+			<article>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</article>
+			<div>
+				<img src="imagenes/taco.jpg" class="taco">
+				<img src="imagenes/taco.jpg" class="taco">
+				<img src="imagenes/taco.jpg" class="taco">
+			</div>
+			<article>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</article>
+		</section>
+
+		<!-- Publicidad -->
+
+		<section class="publicidad">
+			<article>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			</article>
+			<div>
+				<img src="imagenes/sushi.jpg" class="sushi">
+				<img src="imagenes/sushi.jpg" class="sushi">
+				<img src="imagenes/sushi.jpg" class="sushi">
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<p class="footer"><i>Diseñador,fotógrafa y publicidad </i>Tatiana Torres </p>
+		</footer>
+
+	</body>
+
+</html>

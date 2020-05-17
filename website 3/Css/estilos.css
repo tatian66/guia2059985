@@ -1,0 +1,54 @@
+*/*aspectos generales*/{
+margin:0px;
+padding:0px;
+font-family:arial, helvetica, verdana;
+
+}
+body{
+	background: #e3e4e6;
+}
+h2,p{
+	margin: 15px;
+	padding: 10px;
+}
+.main .article{
+	background: #c79dd7;
+	width: 95%;
+	margin: 20px 20px;
+	float: left;
+	border-radius: 10px;
+}
+header, .main, .article{
+	width: 100%;
+	max-width: 95%;
+	margin: auto;
+}
+.video{
+	background: #313131;
+	width: 95%;
+	margin: 10px 10px;
+	float: left;
+	border-radius: 10px;
+	
+}
+
+ .anni{
+	border-radius: 10px;
+	margin: 20px; }
+.texto{
+	background: #f6d9d5;
+	width: 40%;
+	margin: 20px 20px;
+	float: left;
+	border-radius: 10px
+}
+
+footer{ 
+	background: #c79dd7;
+	width: 95%;
+	margin: 20px 20px;
+	float: left;
+	border-radius: 10px;
+	text-align: center;
+	
+}

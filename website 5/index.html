@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link  rel = "shortcut icon"  href = "img/favicon.ico"  type = "image / x-icon" > 
+<link rel="stylesheet" type="text/css" href="Css/estilos 5.css">
+<link rel="stylesheet" type="text/css" href="js/animacion.js">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Documento sin título</title>
+</head>
+
+<body>
+<header>
+	<nav>
+<div class="topnav">
+  <a class="active" href="#home">Inicio</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="search-container">
+  <form action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  </form>
+  </div>
+	</nav>
+</div>
+</header>
+	<!--menu vertical-->
+<section class="main">
+<article class="article">
+<div class="vertical-menu">
+  <a href="#" class="active">Home</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+<a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#">vertical menu</a>
+  <a href="#" class="abajo">vertical menu</a>
+</div>
+</article>
+</section>
+	<!--silde-->
+	
+	
+	<section class="silde">
+	<article>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="imagenes/captus.jpg" style="width 20%">
+  <img class="mySlides" src="imagenes/gatos.jpg" style="width: 20%">
+  <img class="mySlides" src="imagenes/posillos.jpg" style="width:20%">
+  <img class="mySlides" src="imagenes/taza.jpg" style="width:20%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+		
+<!--java script-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	</article>
+	</section>
+	<!--cards-->
+	<section class="carta">
+	<center>
+		<div>
+		<img src="imagenes/posillos.jpg" class="taza">
+		</div>
+		<h2>title</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit</p></center>	</section>
+	
+	<section class="carta">
+	<center>
+		<div>
+		<img src="imagenes/posillos.jpg" class="taza">
+		</div>
+		<h2>title</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit</p>
+		</center>	
+	</section>
+	<!--texto inferior-->
+	<section class="texto">
+		<article class="interno">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit</p>
+		
+		</article>
+		<article class="interno">
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit</p>
+		
+		</article>
+		<article class="interno">
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit</p>
+		</article>
+		<article class="interno">
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit</p>
+		</article>
+	</section>
+	<!--footer-->
+	<footer>
+		<p class="footer">Tatiana Alejandra Torres Daza, Diseñador gráfico, Fotógrafa.</p>
+	</footer>
+
+	
+
+	
+	
+</body>
+</html>
